@@ -18,7 +18,7 @@ jobs:
       - uses: legoktm/gh-action-build-deb@debian-buster
         id: build-debian-buster
         with:
-          args: --nosign
+          args: --no-sign
 
       - uses: actions/upload-artifact@v1
         with:
@@ -67,7 +67,7 @@ jobs:
   build-deb:
     runs-on: ubuntu-latest
     strategy:
-      matrix: 
+      matrix:
         distro: [ubuntu-focal, ubuntu-eoan, ubuntu-bionic, debian-buster]
     steps:
       - uses: actions/checkout@v2
