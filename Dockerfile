@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:lunar
 
 ENV DEBIAN_FRONTEND=noninteractive
 
