@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:mantic
 
 ENV DEBIAN_FRONTEND=noninteractive
 
