@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:kinetic
 
 ENV DEBIAN_FRONTEND=noninteractive
 
