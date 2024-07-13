@@ -19,6 +19,10 @@ SUPPORTED = {
         "hirsute",
         "impish",
         "jammy",
+        "kinetic",
+        "lunar",
+        "mantic",
+        "noble",
     ]
 }
 

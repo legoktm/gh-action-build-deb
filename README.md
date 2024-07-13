@@ -33,7 +33,9 @@ Each Debian/Ubuntu version to build for has its own branch. The following are
 currently supported:
 
 * `debian-buster` aka [Debian 10](https://www.debian.org/releases/buster/)
-* `debian-bullseye` aka Debian 11 (currently testing, still unreleased)
+* `debian-bullseye` aka Debian 11
+* `debian-bookworm` aka Debian 12
+* `debian-trixie` aka Debian 13
 * `debian-unstable` aka Debian Sid
 
 * `ubuntu-bionic` aka [Ubuntu 18.04 LTS](https://en.wikipedia.org/wiki/Ubuntu_version_history#1804)
@@ -43,6 +45,10 @@ currently supported:
 * `ubuntu-hirsute` aka [Ubuntu 21.04](https://en.wikipedia.org/wiki/Ubuntu_version_history#2104)
 * `ubuntu-impish` aka [Ubuntu 21.10](https://en.wikipedia.org/wiki/Ubuntu_version_history#2110)
 * `ubuntu-jammy` aka [Ubuntu 22.04](https://en.wikipedia.org/wiki/Ubuntu_version_history#2204)
+* `ubuntu-kinetic`
+* `ubuntu-lunar`
+* `ubuntu-mantic`
+* `ubuntu-noble`
 
 ## Configuration
 
@@ -67,7 +73,7 @@ jobs:
   build-deb:
     runs-on: ubuntu-latest
     strategy:
-      matrix: 
+      matrix:
         distro: [ubuntu-focal, ubuntu-eoan, ubuntu-bionic, debian-buster]
     steps:
       - uses: actions/checkout@v2
