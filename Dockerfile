@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:impish
 
 ENV DEBIAN_FRONTEND=noninteractive
 
