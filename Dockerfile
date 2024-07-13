@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:groovy
 
 ENV DEBIAN_FRONTEND=noninteractive
 
