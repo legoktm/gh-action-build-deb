@@ -1,11 +1,8 @@
-FROM {{FROM}}
+FROM debian:bookworm
 
-ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install --yes docker.io
 
-RUN apt-get update && apt-get upgrade -y && \
- apt-get install build-essential debhelper devscripts equivs \
- software-properties-common -y
-
+COPY inner /inner
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
