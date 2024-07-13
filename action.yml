@@ -1,6 +1,9 @@
 name: 'Build Debian package'
 description: 'Build a Debian package'
 inputs:
+  distro:
+    description: 'Docker image to build with'
+    required: true
   sources:
     description: Any extra sources to add to apt
     required: false
