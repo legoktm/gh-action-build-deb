@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:bionic
 
 ENV DEBIAN_FRONTEND=noninteractive
 
