@@ -15,7 +15,7 @@ SUPPORTED = {
         "bionic",
         "eoan",
         "focal",
-        "groovy"
+        "groovy",
         "hirsute",
         "impish",
         "jammy",
