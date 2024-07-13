@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:noble
 
 ENV DEBIAN_FRONTEND=noninteractive
 
