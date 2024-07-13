@@ -1,4 +1,4 @@
-FROM {{FROM}}
+FROM ubuntu:eoan
 
 ENV DEBIAN_FRONTEND=noninteractive
 
